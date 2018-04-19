@@ -2,9 +2,10 @@ import os
 import glob
 import time
 import urllib.request
+seq = 0
 
-baseURL='http://localhost:8080/log?device=19&unit=7&type=T'
-seq=0
+#baseURL = 'https://api.thingspeak.com/update?api_key=%s' % myAPI
+baseURL = 'http://localhost:8080/log?device=9&unit=19&type=&'
 
 os.system('modprobe w1-gpio')
 os.system('modprobe w1-therm')
@@ -32,8 +33,9 @@ def read_temp():
 
 while True:
   t = read_temp()
-  f = urllib.request.urlopen(baseURL+'&value='+str(t)+'&seq='+str(seq))
-  seq += 1
-  print(seq,t)
+  url = baseURL +'&value='+ str(t) +"&seq="+ str(seq)
+  f = urllib.request.urlopen(url)
+  seq = seq + 1
+  html = f.read()
+  print(seq, t)
   time.sleep(10)
-
