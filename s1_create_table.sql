@@ -12,5 +12,5 @@ ip char(15),
 time TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
 
 CREATE USER 'me'@'localhost' IDENTIFIED BY 'mypassword';
-GRANT ALL PRIVILEGES ON mydb.* TO 'me'@'localhost';
+GRANT ALL PRIVILEGES ON myhw.* TO 'me'@'localhost';
 FLUSH PRIVILEGES;
