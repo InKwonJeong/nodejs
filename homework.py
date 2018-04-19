@@ -3,7 +3,7 @@ import glob
 import time
 import urllib.request
 
-baseURL='http://localhost:8080/log?device=19&unit=7&type=T'
+baseURL='http://localhost:8080/log?device=19&unit=7&type='T''
 seq=0
 
 os.system('modprobe w1-gpio')
