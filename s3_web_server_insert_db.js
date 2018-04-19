@@ -1,6 +1,6 @@
 /*
- * 2018/3/23 Kyuho Kim
- * ekyuho@gmail.com 
+ * 2018/4/19 Inkwon Jeong
+ * wjd03215@kookmin.ac.kr
  * GET으로 호출하는 경우.
  * http://localhost:8080/log?device=202&unit=3&type=T&value=24.2&seq=34
 */
@@ -13,7 +13,7 @@ var connection = mysql.createConnection({
     host: 'localhost',
     user: 'me',
     password: 'mypassword',
-    database: 'mydb'
+    database: 'myhw'
 })
 connection.connect();
 
