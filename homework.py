@@ -3,7 +3,6 @@ import glob
 import time
 import urllib.request
 
-myAPI = "CT4OL3AR9FMQ093H"
 baseURL='http://localhost:8080/log?device=19&unit=7&type=T'
 seq=0
 
