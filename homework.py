@@ -33,7 +33,7 @@ def read_temp():
 while True:
   t = read_temp()
   seq += 1
-  f = urllib.request.urlopen(baseURL+'&value='+str(t)+'&seq='+str(seq))
+  f = urllib.request.urlopen(baseURL+'&value='+str(t)+'&seq='+int(seq))
   print(seq,t)
   time.sleep(10)
 
