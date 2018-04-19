@@ -1,5 +1,5 @@
-create database mydb;
-use mydb;
+create database myhw;
+use myhw;
 
 create table sensors (
 id int not null auto_increment primary key,
